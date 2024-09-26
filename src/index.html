@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музей транспорта Москвы</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="assets/img/logo.svg" />
+
+        <nav>
+            <ul>
+                <li><a href="#">Музей</a></li>
+                <li><a href="#">Выставки и события</a></li>
+                <li><a href="#">Коллекция</a></li>
+                <li><a href="#">Лекторий</a></li>
+                <li><a href="#">Экскурсии</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Онлайн магазин</a></li>
+                <li><button class="buyButton buyButtonNav" href="#">Купить билеты</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <img class="mainImage" src="assets/img/main.svg" />
+
+            <button type="button" class="showMoreButton showMoreButtonMain">
+                Узнать подробнее
+                <img src="assets/img/arrow.svg" />
+            </button>
+        </div>
+
+        <div class="eventToday">
+            <h2>
+                События сегодня
+            </h2>
+
+            <div class="eventBoard">
+                <div class="card cardBack_1">
+
+                    <div class="textBoxCard">
+                        <div>
+                            <h3>Куплю Гараж</h3>
+
+                            <p>
+                                Выставка Музея <br />
+                                Транспорта Москвы
+                            </p>
+
+                            <div class="textWithMapMark">
+                                <img src="assets/img/map_mark.svg">
+
+                                <p>Пространство УКТ <br /> в Севкабель Порту</p>
+                            </div>
+                        </div>
+
+
+
+                        <button type="button" class="showMoreButton">
+                            Узнать подробнее
+                            <img src="assets/img/arrow.svg" />
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="card cardBack_2">
+                    <div class="textBoxCard">
+                        <div>
+                            <h3>Экскурсии по Метро <br /> Москвы</h3>
+
+                            <p>
+                                Новый проект Музея <br /> Транспорта Москвы
+                            </p>
+
+                            <div class="textWithMapMark">
+                                <img src="assets/img/map_mark.svg">
+
+                                <p>Московское метро</p>
+                            </div>
+                        </div>
+
+
+
+                        <button type="button" class="showMoreButton">
+                            Узнать подробнее
+                            <img src="assets/img/arrow.svg" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buyTicket">
+            <form class="buyTicketForm" method="post">
+                <h2>Покупка билета</h2>
+
+                <div class="inputForm">
+                    <div class="select-wrapper">
+                        <select name="event" required>
+                            <option>Мероприятие</option>
+                            <option value="option1">Куплю Гараж</option>
+                            <option value="option2">Экскурсии по метро Москвы</option>
+                            <option value="option3">Мероприятие_3</option>
+                        </select>
+                    </div>
+
+                    <input type="date" name="date" required />
+
+                    <input type="text" name="secLastName" placeholder="Имя Фамилия" required>
+
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+
+                <input class="buyButton" type="submit" value="Купить билет" />
+            </form>
+        </div>
+
+        <h2 class="titleBoard">Витрина проектов Музея</h2>
+
+        <div class="boardProject">
+            <button id="turnLeft" class="turnLeft">
+                <img src="assets/img/arrow_left.svg" />
+            </button>
+
+            <div class="carouselBox">
+                <div class="carousel-wrapper" id="carousel">
+                    <img src="assets/img/def_1.png" />
+                    <img src="assets/img/def_2.png" />
+                    <img src="assets/img/def_2.png" />
+                    <img src="assets/img/def_2.png" />
+                    <img src="assets/img/def_2.png" />
+                    <img src="assets/img/def_2.png" />
+                </div>
+            </div>
+
+
+            <button id="turnRight" class="turnRight">
+                <img src="assets/img/arrow_right.svg" />
+            </button>
+
+        </div>
+
+        <div class="news">
+            <h2>Новости музея</h2>
+
+            <div class="newsBoard">
+                <div class="newsCard">
+                    <div class="newsBoxTextButton">
+                        <div class="newsBoxText">
+                            <p>Музей Транспорта<br /> Москвы представил<br /> инсталляцию «Двери<br /> открываются» в
+                                зале<br /> ожидания
+                                Северного<br /> речного вокзала</p>
+                        </div>
+                        <button type="button" class="showMoreButton newsButton">
+                            Узнать подробнее
+                            <img src="assets/img/arrow.svg" />
+                        </button>
+                    </div>
+                    <div class="imgBox">
+                        <img src="assets/img/news_1.png" />
+                    </div>
+
+                </div>
+
+                <div class="newsCard">
+                    <div class="newsBoxTextButton">
+                        <div class="newsBoxText">
+                            <p>Музей Транспорта<br /> Москвы завершил<br /> реставрацию<br /> тротуароуборочной<br />
+                                ретромашины ТУМ-975</p>
+                        </div>
+                        <button type="button" class="showMoreButton newsButton">
+                            Узнать подробнее
+                            <img src="assets/img/arrow.svg" />
+                        </button>
+                    </div>
+                    <div class="imgBox">
+                        <img src="assets/img/news_2.png" />
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerCard">
+            <img class="footerLogo" src="assets/img/logo.svg" />
+        </div>
+        <div class="footerCard secFooter">
+            <div class="boxFooterCardSec">
+                <button class="buyButton">Купить билет</button>
+
+                <img src="assets/img/social_network.png" />
+            </div>
+        </div>
+        <div class="footerCard"></div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,400 @@
+@font-face {
+    font-family: 'Cormorant-Regular';
+    src: url('assets/font/Cormorant-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Revard';
+    src: url('assets/font/Revard.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('assets/font/PlayfairDisplay-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Cormorant-Regular', serif;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Revard', cursive;
+    font-size: 60px;
+    line-height: 66px;
+    margin: 0;
+}
+
+h3{
+    font-family: 'Revard', cursive;
+    font-size: 30px;
+    line-height: 33px;
+    margin: 0;
+}
+p{
+    margin: 0;
+
+}
+
+header{
+
+    background-color: #D9D9D9;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+    gap:10px;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+header nav ul {
+    display: flex; 
+    flex-direction: row;
+    gap: 25px;
+    padding: 0;
+    list-style:none;
+
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul a{
+    text-decoration:none;
+    color: black;
+    font-size: 25px;
+}
+
+.mainImage{
+    width: 100%;
+}
+
+.showMoreButton{
+    border-style: none;
+    border-radius: 20px;
+    background-color: #605F63;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    font-family: 'Revard', cursive;
+    font-size: 20px;
+    align-items: center;
+    cursor: pointer;
+
+   
+}
+
+.showMoreButtonMain{
+    position: absolute;
+    right: 40vh;
+    top: 120vh;
+}
+
+.showMoreButton:hover{
+    background-color: #836868;
+    box-shadow:  4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.showMoreButton:active{
+    background-color: #836868;
+}
+
+.eventToday{
+    padding: 80px 130px;
+}
+
+.eventToday h2{
+    margin-bottom: 48px;
+}
+
+.eventBoard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.textBoxCard{
+    display: flex;
+    flex-direction: column;
+    padding: 0 26px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 38px;
+    justify-content: space-between;
+}
+
+.card{
+    width: 1179px;
+    height: 360px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardBack_1{
+    background-image: url('assets/img/card_1.jpg');
+    justify-content: flex-end;
+}
+
+.cardBack_2{
+    background-image: url('assets/img/card_2.jpg');
+    justify-content: flex-start;
+
+}
+
+.textWithMapMark{
+    display: flex;
+    flex-direction: row;
+}
+
+.textBoxCard h3 {
+    margin-top: 38px
+}
+
+.buyTicket{
+    background-image: url('assets/img/sec_background.jpg');
+    padding: 88px 158px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.buyTicketForm{
+    width: 438px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
+
+.buyTicketForm h2{
+    color: white;
+}
+
+.buyButton{
+    padding: 22px 46px;
+    background-color: #605F63;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    font-family: 'PlayfairDisplay-Regular', serif;
+    font-size: 25px;
+    line-height: 25px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.buyButtonNav{
+    padding: 10px 20px;
+}
+
+.buyButton:hover{
+    background-color: #836868;
+    box-shadow:  4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buyButton:active{
+    background-color: #836868;
+}
+
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+select{
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    font-family: 'PlayfairDisplay-Regular', serif;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 10px;
+    padding: 22px 17px 25px 35px;
+    appearance: none;
+    
+}
+
+input{
+    border: 1px solid #D9D9D9;
+    font-family: 'PlayfairDisplay-Regular', serif;
+    font-size: 25px;
+    line-height: 25px;
+    border-radius: 10px;
+    padding: 22px 17px 25px 35px;
+}
+
+.select-wrapper{
+    position: relative;
+}
+
+.select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 12px);
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    background-image: url('assets/img/arrow_dropDown.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.titleBoard{
+    margin-top: 80px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.boardProject{
+    background-color: #8E8E8E;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.boardProjectBox{
+    padding-bottom: 75px;
+    
+}
+
+.boardProject button{
+    background-color: #8E8E8E;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.turnLeft{
+    padding-left: 23px;
+    padding-right: 26px;
+    left: 0;
+}
+
+.turnRight{
+    padding-right: 23px;
+    padding-left: 26px;
+    right: 0;
+}
+
+.carousel-wrapper {
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding-bottom:  75px;
+}
+
+.carouselBox{
+    overflow: hidden;
+}
+
+.news{
+    padding: 80px 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px
+}
+
+.newsBoard{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.newsCard{
+    display: flex;
+    background-image: url('assets/img/background_news.svg');
+}
+
+.newsBoxTextButton{
+    width: 273px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsBoxText{
+    padding-top: 39px;
+    text-align: center;
+}
+
+.newsButton{
+    line-height: 33px;
+    width: 98%;
+}
+
+.imgBox{
+    padding: 8px;
+}
+
+footer{
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    padding-top: 38px;
+    padding-bottom: 85px;
+}
+
+.footerCard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secFooter{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    display: flex;
+}
+
+.footerLogo{
+    height: 268px;
+    width: 258px;
+}
+
+.boxFooterCardSec{
+    padding: 0 81px;
+    padding-bottom: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
